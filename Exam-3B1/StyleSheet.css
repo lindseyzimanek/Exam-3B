@@ -1,0 +1,25 @@
+﻿body {
+}
+
+h1{text-align:center;}
+
+h2{text-align:center;}
+
+section{float:left;
+        background-color:blue;
+        width:30%;        
+}
+
+
+div{padding:4px;}
+
+aside{float:right;
+      background-color:yellow;
+      width:70%;
+      align-content:center;
+}
+content{align-content:center;}
+
+footer{text-align:center;
+       font-style:italic;
+}

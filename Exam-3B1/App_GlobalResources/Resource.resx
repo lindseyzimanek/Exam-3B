@@ -117,31 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btn_submit" xml:space="preserve">
-    <value>Submit</value>
-  </data>
-  <data name="ChooseLanguage" xml:space="preserve">
-    <value>Please choose your language:</value>
-  </data>
-  <data name="Color" xml:space="preserve">
-    <value>Green</value>
-  </data>
-  <data name="Gender" xml:space="preserve">
-    <value>I am:</value>
-  </data>
-  <data name="Graduate" xml:space="preserve">
-    <value>I plan to graduate on:</value>
-  </data>
   <data name="lbl_course" xml:space="preserve">
     <value>Software Design and Development</value>
   </data>
   <data name="lbl_welcome" xml:space="preserve">
     <value>Welcome to MSCI:3300</value>
-  </data>
-  <data name="MyName" xml:space="preserve">
-    <value>My name is:</value>
-  </data>
-  <data name="Salary" xml:space="preserve">
-    <value>When I graduate, I hope to earn:</value>
   </data>
 </root>

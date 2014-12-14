@@ -117,31 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btn_submit" xml:space="preserve">
-    <value>提交</value>
-  </data>
-  <data name="ChooseLanguage" xml:space="preserve">
-    <value>语言选择:</value>
-  </data>
-  <data name="Color" xml:space="preserve">
-    <value>Green</value>
-  </data>
-  <data name="Gender" xml:space="preserve">
-    <value>我是：</value>
-  </data>
-  <data name="Graduate" xml:space="preserve">
-    <value>我打算在畢業:</value>
-  </data>
   <data name="lbl_course" xml:space="preserve">
-    <value>軟件設計與開發</value>
+    <value>Diseño y Desarrollo de Software</value>
   </data>
   <data name="lbl_welcome" xml:space="preserve">
-    <value>歡迎來到MSCI：3300</value>
-  </data>
-  <data name="MyName" xml:space="preserve">
-    <value>我的名字是:</value>
-  </data>
-  <data name="Salary" xml:space="preserve">
-    <value>當我畢業了，我希望賺:</value>
+    <value>Bienvenido a MSCI: 3300</value>
   </data>
 </root>

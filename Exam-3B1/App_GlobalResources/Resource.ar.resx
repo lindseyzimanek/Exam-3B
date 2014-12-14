@@ -117,10 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btn_submit" xml:space="preserve">
-    <value>Submit</value>
+  <data name="lbl_course" xml:space="preserve">
+    <value>تصميم وتطوير البرمجيات</value>
   </data>
   <data name="lbl_welcome" xml:space="preserve">
-    <value>Welcome to MSCI:3300</value>
+    <value>مرحبا بكم في MSCI: 3300</value>
   </data>
 </root>

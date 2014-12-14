@@ -120,28 +120,40 @@
   <data name="btn_submit" xml:space="preserve">
     <value>Presentar</value>
   </data>
-  <data name="ChooseLanguage" xml:space="preserve">
-    <value>Seleccionar Idioma:</value>
-  </data>
-  <data name="Color" xml:space="preserve">
-    <value>Pink</value>
-  </data>
-  <data name="Gender" xml:space="preserve">
+  <data name="lbl_gender" xml:space="preserve">
     <value>Yo soy:</value>
   </data>
-  <data name="Graduate" xml:space="preserve">
+  <data name="lbl_github" xml:space="preserve">
+    <value>Por favor, visite conmigo en </value>
+  </data>
+  <data name="lbl_graduate" xml:space="preserve">
     <value>Tengo la intención de graduarse en:</value>
   </data>
-  <data name="lbl_course" xml:space="preserve">
-    <value>Diseño y Desarrollo de Software</value>
+  <data name="lbl_graduateResponse" xml:space="preserve">
+    <value>Espero que tengas un gran día cuando se gradúe en </value>
   </data>
-  <data name="lbl_welcome" xml:space="preserve">
-    <value>Bienvenido a MSCI: 3300</value>
+  <data name="lbl_hello" xml:space="preserve">
+    <value>Hola, </value>
   </data>
-  <data name="MyName" xml:space="preserve">
+  <data name="lbl_language" xml:space="preserve">
+    <value>Por favor, elige tu idioma:</value>
+  </data>
+  <data name="lbl_name" xml:space="preserve">
     <value>Mi nombre es:</value>
   </data>
-  <data name="Salary" xml:space="preserve">
-    <value>Cuando me gradúe, espero poder ganar:</value>
+  <data name="lbl_salary" xml:space="preserve">
+    <value>Cuando me gradúe, tengo la intención de ganar:</value>
+  </data>
+  <data name="lbl_salaryResponse" xml:space="preserve">
+    <value>Te deseo lo mejor en su carrera después de la graduación. Espero que gane </value>
+  </data>
+  <data name="lbl_salaryResponse2" xml:space="preserve">
+    <value> como un salario en su primer trabajo!</value>
+  </data>
+  <data name="rbtn_female" xml:space="preserve">
+    <value>Femenino</value>
+  </data>
+  <data name="rbtn_male" xml:space="preserve">
+    <value>Masculino</value>
   </data>
 </root>

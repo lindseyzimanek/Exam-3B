@@ -20,7 +20,7 @@
 
 <section>
 <div>
-    <asp:Label ID="lbl_language" runat="server" Text="<%$ Resources:Resource, ChooseLanguage %>"></asp:Label>
+    <asp:Label ID="lbl_language" runat="server" meta:resourceKey="lbl_language"></asp:Label>
 
     <br />
 
@@ -33,37 +33,56 @@
 </div>
 </section>
 
+<%If Not IsPostBack Then%>
+
 <aside>
-      <asp:Label ID="lbl_name" runat="server" Text="<%$ Resources:Resources, MyName %>"></asp:Label>
+     <asp:Label ID="lbl_name" runat="server" meta:resourceKey="lbl_name"></asp:Label>
      <asp:TextBox ID="tb_name" runat="server"></asp:TextBox>
 
     <br />
     <br />
 
-     <asp:Label ID="lbl_gender" runat="server" Text="<%$ Resources:Resources, Gender %>"></asp:Label>
-     <asp:RadioButtonList ID="rbtn_gender" runat="server">
-         <asp:ListItem>Male</asp:ListItem>
-         <asp:ListItem>Female</asp:ListItem>
-     </asp:RadioButtonList>
-
+     <asp:Label ID="lbl_gender" runat="server" meta:resourceKey="lbl_gender"></asp:Label>        
+     <asp:RadioButton ID="rbtn_male" runat="server" meta:resourceKey="rbtn_male" GroupName="gender" Checked="True"/>
+     <asp:RadioButton ID="rbtn_female" runat="server" meta:resourceKey="rbtn_female" GroupName="gender" />
+    
     <br />
 
-    <asp:Label ID="lbl_graduate" runat="server" Text="<%$ Resources:Resources, Graduate %>"></asp:Label>
+    <asp:Label ID="lbl_graduate" runat="server" meta:resourceKey="lbl_graduate"></asp:Label>
     <asp:Calendar ID="cal_graduate" runat="server"></asp:Calendar>
 
     <br />
 
-    <asp:Label ID="lbl_salary" runat="server" Text="<%$ Resources:Resources, Salary %>"></asp:Label>
+    <asp:Label ID="lbl_salary" runat="server" meta:resourceKey="lbl_salary"></asp:Label>
     <asp:TextBox ID="tb_salary" runat="server"></asp:TextBox>
 
     <br />
     <br />
 
-    <asp:Button ID="btn_submit" runat="server" Text="<%$ Resources:Resources, btn_submit %>" />
+    <asp:Button ID="btn_submit" runat="server" meta:resourceKey="btn_submit"/>
 
  </aside>
 </div>
 
+<%Else%>
+
+    <asp:Label ID="lbl_hello" runat="server" meta:resourceKey="lbl_hello"></asp:Label> <asp:Label ID="lbl_nameTitle" runat="server"></asp:Label> <asp:Label ID="lbl_nameOutput" runat="server"></asp:Label>
+    
+    <br />
+    <br />
+
+    <asp:Label ID="lbl_graduateResponse" runat="server" meta:resourceKey="lbl_graduateResponse"></asp:Label>
+    <asp:Label ID="lbl_calendarResponse" runat="server"></asp:Label>
+
+    <br />
+    <br />
+
+    <asp:Label ID="lbl_salaryResponse" runat="server" meta:resourceKey="lbl_salaryResponse"></asp:Label> <asp:Label ID="lbl_expectedSalary" runat="server"></asp:Label> <asp:Label ID="lbl_salaryResponse2" runat="server" meta:resourceKey="lbl_salaryResponse2"></asp:Label>
+
+    <asp:Label ID="lbl_github" runat="server" meta:resourceKey="lbl_github"></asp:Label> <a href="https://github.com/lindseyzimanek">GitHub</a>
+
+
+<%End If%>
 
 <br />
 

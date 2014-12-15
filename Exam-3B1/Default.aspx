@@ -23,7 +23,7 @@
         <tr>
             <td>
 
-    <asp:Label ID="lbl_language" runat="server" meta:resourceKey="lbl_language"></asp:Label>
+    <asp:Label ID="lbl_language" runat="server" Text="<%$ Resources:Resource, lbl_language %>" ></asp:Label>
 
     <br />
 
@@ -40,50 +40,59 @@
     <td>
         
 <asp:Panel ID="panel_questions" runat="server">
-     <asp:Label ID="lbl_name" runat="server" meta:resourceKey="lbl_name"></asp:Label>
-     <asp:TextBox ID="tb_name" runat="server"></asp:TextBox>
+     <asp:Label ID="lbl_name" runat="server" Text="<%$ Resources:Resource, lbl_name %>"></asp:Label>
+     <asp:TextBox ID="tb_name" runat="server"></asp:TextBox> <asp:RequiredFieldValidator ID="rfv_name" runat="server" ErrorMessage="Please enter your name." CssClass="rfv" ControlToValidate="tb_name"></asp:RequiredFieldValidator>
+
+     
 
     <br />
     <br />
 
-     <asp:Label ID="lbl_gender" runat="server" meta:resourceKey="lbl_gender"></asp:Label>        
-     <asp:RadioButton ID="rbtn_male" runat="server" meta:resourceKey="rbtn_male" GroupName="gender" Checked="True"/>
-     <asp:RadioButton ID="rbtn_female" runat="server" meta:resourceKey="rbtn_female" GroupName="gender" />
+     <asp:Label ID="lbl_gender" runat="server" Text="<%$ Resources:Resource, lbl_gender %>"></asp:Label>        
+     <asp:RadioButton ID="rbtn_male" runat="server" GroupName="gender" Checked="True" Text="<%$ Resources:Resource, rbtn_male %>"/>
+     <asp:RadioButton ID="rbtn_female" runat="server" GroupName="gender" Text="<%$ Resources:Resource, rbtn_female %>" />
     
     <br />
+    <br />
 
-    <asp:Label ID="lbl_graduate" runat="server" meta:resourceKey="lbl_graduate"></asp:Label>
+    <asp:Label ID="lbl_graduate" runat="server" Text="<%$ Resources:Resource, lbl_graduate %>"></asp:Label>
     <asp:Calendar ID="cal_graduate" runat="server"></asp:Calendar>
 
     <br />
 
-    <asp:Label ID="lbl_salary" runat="server" meta:resourceKey="lbl_salary"></asp:Label>
+    <asp:Label ID="lbl_salary" runat="server" Text="<%$ Resources:Resource, lbl_salary %>"></asp:Label>
     <asp:TextBox ID="tb_salary" runat="server"></asp:TextBox>
 
+     <asp:RequiredFieldValidator ID="rfv_salary" runat="server" ControlToValidate="tb_salary" CssClass="rfv" ErrorMessage="Please enter your preferred salary."></asp:RequiredFieldValidator>
+
     <br />
     <br />
 
-    <asp:Button ID="btn_submit" runat="server" meta:resourceKey="btn_submit"/>
+    <asp:Button ID="btn_submit" runat="server" Text="<%$ Resources:Resource, btn_submit %>"/>
 
  </asp:Panel>
 
 
  <asp:Panel ID="panel_response" runat="server" Visible="false">
-    <asp:Label ID="lbl_hello" runat="server" meta:resourceKey="lbl_hello"></asp:Label> <asp:Label ID="lbl_nameTitle" runat="server"></asp:Label> <asp:Label ID="lbl_nameOutput" runat="server"></asp:Label>
+    <asp:Label ID="lbl_hello" runat="server" Text="<%$ Resources:Resource, lbl_hello %>"></asp:Label> <asp:Label ID="lbl_nameTitle" runat="server"></asp:Label> <asp:Label ID="lbl_nameOutput" runat="server"></asp:Label>,
     
-    <br />
-    <br />
+     <br />
+     <br />
 
-    <asp:Label ID="lbl_graduateResponse" runat="server" meta:resourceKey="lbl_graduateResponse"></asp:Label>
-    <asp:Label ID="lbl_calendarResponse" runat="server"></asp:Label>
-
-    <br />
-    <br />
-
-    <asp:Label ID="lbl_salaryResponse" runat="server" meta:resourceKey="lbl_salaryResponse"></asp:Label> <asp:Label ID="lbl_expectedSalary" runat="server"></asp:Label> <asp:Label ID="lbl_salaryResponse2" runat="server" meta:resourceKey="lbl_salaryResponse2"></asp:Label>
-
-    <asp:Label ID="lbl_github" runat="server" meta:resourceKey="lbl_github"></asp:Label> <a href="https://github.com/lindseyzimanek">GitHub</a>
-</asp:Panel>
+     <asp:Label ID="lbl_graduateResponse" runat="server" Text="<%$ Resources:Resource, lbl_graduateResponse %>"></asp:Label>
+     <asp:Label ID="lbl_calendarResponse" runat="server"></asp:Label>
+     !<br />
+     <br />
+     <asp:Label ID="lbl_salaryResponse" runat="server" Text="<%$ Resources:Resource, lbl_salaryResponse %>"></asp:Label>
+     <asp:Label ID="lbl_expectedSalary" runat="server"></asp:Label>
+     <asp:Label ID="lbl_salaryResponse2" runat="server" Text="<%$ Resources:Resource, lbl_salaryResponse2 %>"></asp:Label>
+     
+     <br />
+     <br />
+     
+     <asp:Label ID="lbl_github" runat="server" Text="<%$ Resources:Resource, lbl_github %>"></asp:Label>
+     <a href="https://github.com/lindseyzimanek">GitHub</a>.
+    </asp:Panel>
 
         </td>
         </tr>
@@ -93,12 +102,11 @@
 
 <br />
 
- <div id="footer">
-    <footer>
+ <footer>
     &copy; Lindsey Zimanek 2014
-    </footer>
-</div>
+ </footer>
 
 </form>
 </body>
 </html>
+

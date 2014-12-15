@@ -35,7 +35,7 @@ Partial Class _Default
         lbl_calendarResponse.Text = cal_graduate.SelectedDate.ToShortDateString()
 
         Dim money As Decimal = Val(tb_salary.Text)
-        lbl_expectedSalary.Text = String.Format("{0:C", money)
+        lbl_expectedSalary.Text = String.Format("{0:C}", money)
 
         lbl_nameOutput.Text = StrConv(tb_name.Text, VbStrConv.ProperCase)
 

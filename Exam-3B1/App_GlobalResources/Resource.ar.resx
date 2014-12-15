@@ -117,10 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btn_submit" xml:space="preserve">
+    <value>عرض</value>
+  </data>
   <data name="lbl_course" xml:space="preserve">
     <value>تصميم وتطوير البرمجيات</value>
   </data>
+  <data name="lbl_gender" xml:space="preserve">
+    <value>أنا:</value>
+  </data>
+  <data name="lbl_github" xml:space="preserve">
+    <value> يرجى زيارة لي على</value>
+  </data>
+  <data name="lbl_graduate" xml:space="preserve">
+    <value>أخطط لتخريج على:</value>
+  </data>
+  <data name="lbl_graduateResponse" xml:space="preserve">
+    <value> آمل أن يكون لديك يوم عظيم عند التخرج على</value>
+  </data>
+  <data name="lbl_hello" xml:space="preserve">
+    <value>,مرحبا</value>
+  </data>
+  <data name="lbl_language" xml:space="preserve">
+    <value>الرجاء اختيار لغتك:</value>
+  </data>
+  <data name="lbl_name" xml:space="preserve">
+    <value>اسمي هو:</value>
+  </data>
+  <data name="lbl_salary" xml:space="preserve">
+    <value>عندما تخرجي، وأنا نخطط لكسب:</value>
+  </data>
+  <data name="lbl_salaryResponse" xml:space="preserve">
+    <value> أتمنى لكم التوفيق في حياتك المهنية بعد التخرج. آمل أن تكسب</value>
+  </data>
+  <data name="lbl_salaryResponse2" xml:space="preserve">
+    <value>كما راتبا في أول وظيفة الخاص بك!</value>
+  </data>
   <data name="lbl_welcome" xml:space="preserve">
     <value>مرحبا بكم في MSCI: 3300</value>
+  </data>
+  <data name="rbtn_female" xml:space="preserve">
+    <value>أنثى</value>
+  </data>
+  <data name="rbtn_male" xml:space="preserve">
+    <value>ذكر</value>
   </data>
 </root>

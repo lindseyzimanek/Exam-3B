@@ -117,10 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btn_submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
   <data name="lbl_course" xml:space="preserve">
     <value>Software Design and Development</value>
   </data>
+  <data name="lbl_gender" xml:space="preserve">
+    <value>I am:</value>
+  </data>
+  <data name="lbl_github" xml:space="preserve">
+    <value>Please visit me on </value>
+  </data>
+  <data name="lbl_graduate" xml:space="preserve">
+    <value>I plan to graduate on:</value>
+  </data>
+  <data name="lbl_graduateResponse" xml:space="preserve">
+    <value>I hope you have a great day when you graduate on </value>
+  </data>
+  <data name="lbl_hello" xml:space="preserve">
+    <value>Hello, </value>
+  </data>
+  <data name="lbl_language" xml:space="preserve">
+    <value>Please choose your language:</value>
+  </data>
+  <data name="lbl_name" xml:space="preserve">
+    <value>My name is:</value>
+  </data>
+  <data name="lbl_salary" xml:space="preserve">
+    <value>When I graduate, I plan to earn:</value>
+  </data>
+  <data name="lbl_salaryResponse" xml:space="preserve">
+    <value>I wish you well in your career after graduation. I hope you earn </value>
+  </data>
+  <data name="lbl_salaryResponse2" xml:space="preserve">
+    <value> as a salary in your first job!</value>
+  </data>
   <data name="lbl_welcome" xml:space="preserve">
     <value>Welcome to MSCI:3300</value>
+  </data>
+  <data name="rbtn_female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="rbtn_male" xml:space="preserve">
+    <value>Male</value>
   </data>
 </root>

@@ -5,7 +5,7 @@ Partial Class _Default
     Inherits System.Web.UI.Page
 
     Protected Overrides Sub InitializeCulture()
-        Dim lang As String = Request("Language1")
+        Dim lang As String = Request("dropdown_languages")
 
         If lang IsNot Nothing Or lang <> "" Then
             Thread.CurrentThread.CurrentUICulture = New CultureInfo(lang)
@@ -16,10 +16,9 @@ Partial Class _Default
 
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-        Dim money As Decimal = tb_salary.Text
-        tb_salary.Text = String.Format("{0:C", money)
-
         tb_name.Focus()
+
+        cal_graduate.VisibleDate = Today
 
     End Sub
 
@@ -33,10 +32,18 @@ Partial Class _Default
             lbl_nameTitle.Text = "Ms. "
         End If
 
-        lbl_nameOutput.Text = tb_name.Text
+        lbl_calendarResponse.Text = cal_graduate.SelectedDate.ToShortDateString()
+
+        Dim money As Decimal = Val(tb_salary.Text)
+        lbl_expectedSalary.Text = String.Format("{0:C", money)
+
+        lbl_nameOutput.Text = StrConv(tb_name.Text, VbStrConv.ProperCase)
 
         lbl_expectedSalary.Text = tb_salary.Text
 
+        panel_questions.Visible = False
+
+        panel_response.Visible = True
 
     End Sub
 End Class

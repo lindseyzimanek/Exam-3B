@@ -11,31 +11,35 @@
 </head>
 <body>
     <form id="form1" runat="server">
-<header>
-<h1><asp:Label ID="lbl_welcome" runat="server" Text="<%$ Resources:Resources, lbl_welcome %>"></asp:Label></h1>
-<h2><asp:Label ID="lbl_course" runat="server" Text="<%$ Resources:Resources, lbl_courses %>"></asp:Label></h2>
-</header>
+
+<div id="container">
+<div id="header">
+<h1><asp:Label ID="lbl_welcome" runat="server" Text="<%$ Resources:Resource, lbl_welcome %>"></asp:Label></h1>
+<h2><asp:Label ID="lbl_course" runat="server" Text="<%$ Resources:Resource, lbl_course %>"></asp:Label></h2>
+</div>
 
 <div id="content">
+    <table class="center">
+        <tr>
+            <td>
 
-<section>
-<div>
     <asp:Label ID="lbl_language" runat="server" meta:resourceKey="lbl_language"></asp:Label>
 
     <br />
 
-    <asp:CheckBoxList ID="CheckBoxList1" runat="server">
-       <asp:ListItem value="ar-sa">Arabic</asp:ListItem>
-       <asp:ListItem Value="zh-tw">Chinese</asp:ListItem>
-       <asp:ListItem Value="en-US">English</asp:ListItem>
-       <asp:ListItem Value="es-mx">Spanish</asp:ListItem>
-    </asp:CheckBoxList>
-</div>
-</section>
+    <asp:DropDownList ID="dropdown_languages" runat="server" AutoPostback="true" Width="100px">
+                <asp:ListItem Value="ar-SA">Arabic</asp:ListItem>
+                <asp:ListItem Value="zh">Chinese</asp:ListItem>
+                <asp:ListItem Value="en-US" Selected="True">English</asp:ListItem>
+                <asp:ListItem Value="es">Spanish</asp:ListItem>
+    </asp:DropDownList>
+    </td>
 
-<%If Not IsPostBack Then%>
+    <p></p>
 
-<aside>
+    <td>
+        
+<asp:Panel ID="panel_questions" runat="server">
      <asp:Label ID="lbl_name" runat="server" meta:resourceKey="lbl_name"></asp:Label>
      <asp:TextBox ID="tb_name" runat="server"></asp:TextBox>
 
@@ -61,11 +65,10 @@
 
     <asp:Button ID="btn_submit" runat="server" meta:resourceKey="btn_submit"/>
 
- </aside>
-</div>
+ </asp:Panel>
 
-<%Else%>
 
+ <asp:Panel ID="panel_response" runat="server" Visible="false">
     <asp:Label ID="lbl_hello" runat="server" meta:resourceKey="lbl_hello"></asp:Label> <asp:Label ID="lbl_nameTitle" runat="server"></asp:Label> <asp:Label ID="lbl_nameOutput" runat="server"></asp:Label>
     
     <br />
@@ -80,9 +83,13 @@
     <asp:Label ID="lbl_salaryResponse" runat="server" meta:resourceKey="lbl_salaryResponse"></asp:Label> <asp:Label ID="lbl_expectedSalary" runat="server"></asp:Label> <asp:Label ID="lbl_salaryResponse2" runat="server" meta:resourceKey="lbl_salaryResponse2"></asp:Label>
 
     <asp:Label ID="lbl_github" runat="server" meta:resourceKey="lbl_github"></asp:Label> <a href="https://github.com/lindseyzimanek">GitHub</a>
+</asp:Panel>
 
-
-<%End If%>
+        </td>
+        </tr>
+        </table>
+</div>
+</div>
 
 <br />
 
